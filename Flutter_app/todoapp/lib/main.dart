@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todoapp/UI/Intray/intray_page.dart';
 import 'package:todoapp/models/global.dart';
 
 void main() {
@@ -42,9 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
               children: <Widget>[
                 TabBarView(
                   children: [
-                    new Container(
-                      color: darkGreyColor,
-                    ),
+                    IntrayPage(),
                     new Container(
                       color: Colors.orange,
                     ),
@@ -96,17 +95,26 @@ class _MyHomePageState extends State<MyHomePage> {
               title: new TabBar(
                 tabs: [
                   Tab(
-                    icon: new Icon(Icons.home),
+                    icon: new Icon(
+                      Icons.calendar_today,
+                      size: 35,
+                    ),
                   ),
                   Tab(
-                    icon: new Icon(Icons.rss_feed),
+                    icon: new Icon(
+                      Icons.add,
+                      size: 35,
+                    ),
                   ),
                   Tab(
-                    icon: new Icon(Icons.settings),
+                    icon: new Icon(
+                      Icons.list,
+                      size: 35,
+                    ),
                   ),
                 ],
-                labelColor: darkGreyColor,
-                unselectedLabelColor: Colors.blue,
+                labelColor: redColor,
+                unselectedLabelColor: darkGreyColor,
                 indicatorSize: TabBarIndicatorSize.label,
                 indicatorPadding: EdgeInsets.all(5.0),
                 indicatorColor: Colors.transparent,
