@@ -78,7 +78,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   width: 80,
                   margin: EdgeInsets.only(
                       top: 120,
-                      left: MediaQuery.of(context).size.width * 0.5 - 35),
+                      left: MediaQuery.of(context).size.width * 0.5 - 40),
                   child: FloatingActionButton(
                     child: Icon(
                       Icons.add,
