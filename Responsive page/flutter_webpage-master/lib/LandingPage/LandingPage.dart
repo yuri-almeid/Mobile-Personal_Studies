@@ -9,7 +9,7 @@ class LandingPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(
-              "Website \nDevelopers",
+              "Liberty \nClube",
               style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 40.0,
